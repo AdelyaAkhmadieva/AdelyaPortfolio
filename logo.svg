@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="АА">
+  <circle cx="50" cy="50" r="50" fill="#5C0627"/>
+  <g transform="translate(50 50) scale(1.111) translate(-39.79 -42.83)" fill="#FFFFFF" font-family="Unbounded, Arial, sans-serif" font-weight="600">
+    <text x="19.09" y="58.28" font-size="27.00" transform="rotate(255.0 19.09 58.28)" text-anchor="middle" dominant-baseline="central">А</text>
+    <text x="25.94" y="34.17" font-size="27.00" transform="rotate(303.3 25.94 34.17)" text-anchor="middle" dominant-baseline="central">А</text>
+    <text x="45.12" y="24.87" font-size="22.00" transform="rotate(349.0 45.12 24.87)" text-anchor="middle" dominant-baseline="central">а</text>
+    <text x="60.22" y="30.06" font-size="17.60" transform="rotate(387.1 60.22 30.06)" text-anchor="middle" dominant-baseline="central">а</text>
+    <text x="66.95" y="40.98" font-size="14.08" transform="rotate(422.0 66.95 40.98)" text-anchor="middle" dominant-baseline="central">а</text>
+    <text x="65.95" y="51.25" font-size="11.26" transform="rotate(454.5 65.95 51.25)" text-anchor="middle" dominant-baseline="central">а</text>
+    <text x="60.39" y="57.47" font-size="9.01" transform="rotate(485.7 60.39 57.47)" text-anchor="middle" dominant-baseline="central">а</text>
+    <text x="53.76" y="58.83" font-size="7.21" transform="rotate(516.9 53.76 58.83)" text-anchor="middle" dominant-baseline="central">а</text>
+    <text x="48.86" y="56.30" font-size="5.77" transform="rotate(550.2 48.86 56.30)" text-anchor="middle" dominant-baseline="central">а</text>
+    <text x="47.54" y="52.05" font-size="4.61" transform="rotate(590.2 47.54 52.05)" text-anchor="middle" dominant-baseline="central">а</text>
+  </g>
+</svg>

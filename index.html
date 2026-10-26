@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Аделя Ахмадиева — коллекция предметов</title>
+  <meta name="description" content="Аделя Ахмадиева: интерфейсы и карточки для вещей, которые хочется взять в руки.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Unbounded:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header" id="top">
+    <a class="logo" href="#top" aria-label="Аделя Ахмадиева">
+      <svg class="logo__mark" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="50" fill="#5C0627"/>
+        <g transform="translate(50 50) scale(1.111) translate(-39.79 -42.83)" fill="#FFFFFF" font-family="Unbounded, Arial, sans-serif" font-weight="600">
+          <text x="19.09" y="58.28" font-size="27.00" transform="rotate(255.0 19.09 58.28)" text-anchor="middle" dominant-baseline="central">А</text>
+          <text x="25.94" y="34.17" font-size="27.00" transform="rotate(303.3 25.94 34.17)" text-anchor="middle" dominant-baseline="central">А</text>
+          <text x="45.12" y="24.87" font-size="22.00" transform="rotate(349.0 45.12 24.87)" text-anchor="middle" dominant-baseline="central">а</text>
+          <text x="60.22" y="30.06" font-size="17.60" transform="rotate(387.1 60.22 30.06)" text-anchor="middle" dominant-baseline="central">а</text>
+          <text x="66.95" y="40.98" font-size="14.08" transform="rotate(422.0 66.95 40.98)" text-anchor="middle" dominant-baseline="central">а</text>
+          <text x="65.95" y="51.25" font-size="11.26" transform="rotate(454.5 65.95 51.25)" text-anchor="middle" dominant-baseline="central">а</text>
+          <text x="60.39" y="57.47" font-size="9.01" transform="rotate(485.7 60.39 57.47)" text-anchor="middle" dominant-baseline="central">а</text>
+          <text x="53.76" y="58.83" font-size="7.21" transform="rotate(516.9 53.76 58.83)" text-anchor="middle" dominant-baseline="central">а</text>
+          <text x="48.86" y="56.30" font-size="5.77" transform="rotate(550.2 48.86 56.30)" text-anchor="middle" dominant-baseline="central">а</text>
+          <text x="47.54" y="52.05" font-size="4.61" transform="rotate(590.2 47.54 52.05)" text-anchor="middle" dominant-baseline="central">а</text>
+        </g>
+      </svg>
+      <span class="logo__name" data-i18n="name">Аделя Ахмадиева</span>
+    </a>
+    <nav class="nav">
+      <a href="#works" data-i18n="navWorks">Работы</a>
+      <a href="#about" data-i18n="navAbout">Обо мне</a>
+      <a href="#skills" data-i18n="navSkills">Навыки</a>
+      <a href="#contact" data-i18n="navContact">Контакты</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero__kicker reveal" data-i18n="kicker">Коллекция · 6 работ</p>
+      <h1 class="hero__title">
+        <span class="line"><span data-i18n="hero1">Вещи,</span></span>
+        <span class="line"><span data-i18n="hero2">которые хочется</span></span>
+        <span class="line"><span><span data-i18n="hero3">взять в руки</span><i class="dot" aria-hidden="true"></i></span></span>
+      </h1>
+      <div class="hero__bottom">
+        <p class="hero__intro reveal" style="--i:3" data-i18n="intro">Я — Аделя. Придумываю, как предметы встречаются с людьми на экране: от одной карточки товара до целого интерфейса.</p>
+        <a class="hero__cta reveal" style="--i:4" href="#works">
+          <span data-i18n="cta">Смотреть экспозицию</span>
+          <span class="arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee"></div>
+    </div>
+
+    <!-- WORKS -->
+    <section class="works" id="works">
+      <div class="works__sticky">
+        <div class="works__head">
+          <h2 class="section-title reveal" data-i18n="worksTitle">Экспозиция</h2>
+          <p class="works__hint reveal" style="--i:1" data-i18n="worksHint">Наведите, чтобы пролистать. Нажмите, чтобы открыть.</p>
+          <div class="works__progress" aria-hidden="true">
+            <span class="works__count"><b id="worksCurrent">01</b> / <span id="worksTotal">06</span></span>
+            <span class="works__bar"><span id="worksBar"></span></span>
+          </div>
+        </div>
+        <div class="works__track" id="track"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <h2 class="section-title reveal" data-i18n="aboutTitle">Обо мне</h2>
+      <p class="about__lead reveal" style="--i:1" data-i18n="aboutLead">Рисую макеты в Figma и верстаю их на HTML и CSS. Работаю в штате и на фрилансе, а ещё учу детей основам веб-разработки.</p>
+      <ol class="principles">
+        <li class="reveal" style="--i:1">
+          <span class="principles__num">01</span>
+          <h3 data-i18n="p1Title">В найме</h3>
+          <p data-i18n="p1Text">Интерфейсы и сайты в роли штатного специалиста.</p>
+        </li>
+        <li class="reveal" style="--i:2">
+          <span class="principles__num">02</span>
+          <h3 data-i18n="p2Title">Фриланс</h3>
+          <p data-i18n="p2Text">Проекты для блогеров и экспертов.</p>
+        </li>
+        <li class="reveal" style="--i:3">
+          <span class="principles__num">03</span>
+          <h3 data-i18n="p3Title">Преподаю</h3>
+          <p data-i18n="p3Text">Основы веб-разработки для детей.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <h2 class="section-title reveal" data-i18n="skillsTitle">Навыки</h2>
+      <ul class="skills__list">
+        <li class="reveal" style="--i:0">HTML</li>
+        <li class="reveal" style="--i:1">CSS</li>
+        <li class="reveal" style="--i:2">JavaScript</li>
+        <li class="reveal" style="--i:3">Figma</li>
+        <li class="reveal" style="--i:4">Adobe Photoshop</li>
+        <li class="reveal" style="--i:5">Adobe Illustrator</li>
+        <li class="reveal" style="--i:6">UI/UX</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <p class="contact__kicker reveal" data-i18n="contactKicker">Есть вещь, которой нужен голос?</p>
+      <a class="contact__big reveal" style="--i:1" href="mailto:adelya0803@list.ru">adelya0803@list.ru</a>
+      <div class="contact__links reveal" style="--i:2">
+        <a href="https://t.me/akh_ar" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://vk.ru/id670617482" target="_blank" rel="noopener">VK</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span data-i18n="name">Аделя Ахмадиева</span>
+    <span>© <span id="year"></span></span>
+    <a href="#top" data-i18n="toTop">Наверх ↑</a>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+    <div class="lightbox__head">
+      <p class="lightbox__label"><span id="lbNum"></span><b id="lbTitle"></b><span id="lbMeta"></span></p>
+      <div class="lightbox__controls">
+        <button type="button" id="lbPrev" aria-label="Previous">←</button>
+        <button type="button" id="lbNext" aria-label="Next">→</button>
+        <button type="button" id="lbClose" aria-label="Close">✕</button>
+      </div>
+    </div>
+    <div class="lightbox__body" id="lbBody" data-lenis-prevent></div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true"><span data-i18n="cursor">Смотреть</span></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
